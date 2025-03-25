@@ -1,0 +1,8 @@
+{
+  "name": "Disable Unredirect",
+  "description": "Disables unredirect fullscreen",
+  "uuid": "disable-unredirect@exeos",
+  "shell-version": [
+    "48"
+  ]
+}
