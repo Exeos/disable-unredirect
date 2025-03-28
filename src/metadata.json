@@ -2,6 +2,7 @@
   "name": "Disable Unredirect",
   "description": "Disables unredirect fullscreen",
   "uuid": "disable-unredirect@exeos",
+  "url": "https://github.com/Exeos/disable-unredirect",
   "shell-version": [
     "48"
   ]

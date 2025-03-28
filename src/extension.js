@@ -4,11 +4,11 @@ export default class DisableUnredirect extends Extension {
 
     constructor(metadata) {
         super(metadata);
-        this.enableUnredirect = undefined;
+        this.enableUnredirect = null;
     }
 
     enable() {
-        if (this.enableUnredirect === undefined) {
+        if (this.enableUnredirect == null) {
             this.enableUnredirect = global.compositor.enable_unredirect;
             global.compositor.enable_unredirect = function () {};
             global.compositor.disable_unredirect();
@@ -16,7 +16,7 @@ export default class DisableUnredirect extends Extension {
     }
 
     disable() {
-        if (this.enableUnredirect !== undefined) {
+        if (this.enableUnredirect != null) {
             global.compositor.enable_unredirect = this.enableUnredirect;
         }
     }
